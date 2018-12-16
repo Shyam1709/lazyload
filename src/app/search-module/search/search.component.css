@@ -1,0 +1,14 @@
+/*to add styling to input*/
+input{
+	border-color: lightgray;
+}
+
+/*to add styling to search bar*/
+.inputstyle{
+border-radius: 40px !important;
+}
+
+/* to add styling for search icon*/
+.set-icon{
+	background-color: cornflowerblue;
+}
