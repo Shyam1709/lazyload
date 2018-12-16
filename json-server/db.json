@@ -60,5 +60,9 @@
       "overview": "The tables are turned as four teenagers are sucked into Jumanji's world - pitted against rhinos, black mambas and an endless variety of jungle traps and puzzles. To survive, they'll play as characters from the game.",
       "release_date": "2017-12-09"
     }
-  ]
+  ],
+   "user": [{"emailId": "shyam123@gmail.com",
+   	"password": "pass@123",
+   	"id": 1
+  }]
 }

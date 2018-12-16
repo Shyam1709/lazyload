@@ -1,6 +1,8 @@
+
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
+import { map, catchError, tap } from 'rxjs/operators';
 import 'rxjs/add/operator/map';
 import { AppConfig }from '../config/config.constant';
 
@@ -9,6 +11,8 @@ export class JsonApiService {
 
   constructor(private http: HttpClient) { 
   }
+
+  private headers = new HttpHeaders({ 'Content-Type': 'application/json' });
 
 // Call rest api to save favourite movie into json database
 addToFavourite(movie){ 
@@ -28,6 +32,11 @@ deleteMovie(movieId){
 // call rest api to update favourite movie details in json database
 updateMovie(movieId,movie){
 	return this.http.patch(AppConfig.apiUrl+'/movies/'+movieId,movie)
+}
+
+// Call rest api to login user into user database
+loginUser(){ 
+   return this.http.get(AppConfig.userUrl)
 }
 
 // Handle errors

@@ -12,7 +12,7 @@ import { HeaderComponent } from '../shared-module/header/header.component';
 import { FooterComponent } from '../shared-module/footer/footer.component';
 
 const routes: Routes = [
-    { path: 'showmovies', component: MoviesComponent },
+    { path: 'movies', component: MoviesComponent },
     { path: 'movie-list', component: MovieListComponent },
     { path: 'movie', component: MovieComponent },
 ];

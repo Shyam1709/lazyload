@@ -7,10 +7,13 @@
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link nav-font" href="#"  routerLink='/movies/showmovies'>Home</a>
+        <a class="nav-link nav-font" href="#"  routerLink='/home/movies'>Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link nav-font" routerLink='/favourite/movies'>Favourite</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-font float-right" href="#" (click)="logout()">Logout</a>
       </li>   
     </ul>
   </div>  
