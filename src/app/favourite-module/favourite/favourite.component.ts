@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import { MovieListComponent } from '../../shared-module/movies/movie-list/movie-list.component';
+ // import { MovieListComponent } from '../../movie-module/movies/movie-list/movie-list.component';
 import { JsonApiService } from './../../services/json-api.service';
 
 

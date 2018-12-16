@@ -8,12 +8,14 @@ import Swal from 'sweetalert2';
   selector: 'app-movie',
   templateUrl: './movie.component.html',
   styleUrls: ['./movie.component.css'],
+  providers: [JsonApiService]
   
 })
 
 export class MovieComponent implements OnInit {
 	@Input() movie: any;
 	@Input() flag: any;
+	@Input() updateMovies: any;
 	@Output() favArray = new EventEmitter();
 	@Output() err =new EventEmitter();
 	@Output() update =new EventEmitter();
@@ -32,9 +34,9 @@ export class MovieComponent implements OnInit {
 
 
     // Add favourite movie to  database
-    addToFavorite(movie) {
+    addToFavourite(movie) {
     	this.jsonApiService.addToFavourite(movie).subscribe((res) =>{
-    		this.getFavorite();
+    		this.getFavourite();
     		Swal({
     			position: 'center',
     			type: 'success',
@@ -59,7 +61,7 @@ export class MovieComponent implements OnInit {
 
 
   // get data of favourite movies from database
-  getFavorite() {
+  getFavourite() {
   	this.jsonApiService.getFavourite().subscribe((res) =>{
   		this.favMovies = res;
   		this.favArray.emit({
@@ -85,7 +87,7 @@ export class MovieComponent implements OnInit {
   	}).then((result) => {
   		if (result.value) {
   			this.jsonApiService.deleteMovie(movieId).subscribe(data=>{
-  				this.getFavorite();
+  				this.getFavourite();
   			},(error:any)=>{
   				this.errorMsg = error.statusText;
   				this.showError = true;
@@ -102,5 +104,9 @@ export class MovieComponent implements OnInit {
   	})
   }
 
+setUpdatedMovieList(event){
+	console.log("action" + JSON.stringify(this.updateMovies));
+ this.getFavourite();
+}
 
 }

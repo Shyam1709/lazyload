@@ -2,12 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-// import {SharedModule } from '../shared-module/shared.module';
-import { MovieListComponent } from '../shared-module/movies/movie-list/movie-list.component';
-import { MovieComponent } from '../shared-module/movies/movie-list/movie/movie.component';
+import { MovieModule } from '../movie-module/movie.module';
+import { SharedModule } from '../shared-module/shared.module';
 
 import { Routes, RouterModule } from '@angular/router';
-
 import { FavouriteComponent } from './favourite/favourite.component';
 
 const routes: Routes = [
@@ -15,10 +13,12 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [FavouriteComponent,MovieListComponent,MovieComponent],
+  declarations: [FavouriteComponent],
   imports: [
     CommonModule,
     FormsModule,
+    MovieModule,
+    SharedModule,
     ReactiveFormsModule,
     RouterModule.forChild(routes)
   ]
