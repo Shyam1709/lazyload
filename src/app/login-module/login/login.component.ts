@@ -9,14 +9,17 @@ import { Router } from "@angular/router";
   styleUrls: ['./login.component.css'],
   providers: [JsonApiService]
 })
+
 export class LoginComponent implements OnInit {
   public loginDetails:any={};
 	public errorMsg ='';
 	public showError : boolean = false;
 	public er: any={};
-	constructor(private jsonApiService: JsonApiService,private router: Router) { }
+	constructor(private jsonApiService: JsonApiService,private router: Router) {
+	}
 
 	ngOnInit() {
+
 	}
 
   // to authenticate the user

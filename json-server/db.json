@@ -1,45 +1,6 @@
 {
   "movies": [
     {
-      "vote_count": 3,
-      "id": 159189,
-      "video": false,
-      "vote_average": 6,
-      "title": "Hello Brother",
-      "popularity": 0.985,
-      "poster_path": "/n1N7EcNkvJCAY8IocGh8ksWaaqc.jpg",
-      "original_language": "ko",
-      "original_title": "안녕, 형아",
-      "genre_ids": [
-        18
-      ],
-      "backdrop_path": "/viwNvJmeb9hBkQLh7Er8a8fzIM0.jpg",
-      "adult": false,
-      "overview": "Nine-year-old Hani (PARK Ji-Bin) is a troublemaker who isn't afraid of anything. A precocious punk, his school friends are all his underlings, and even his family members are under his control. He especially considers his elder brother, HanByul, who often complains of being sick, his greatest target. Until one fateful day, HanByul collapses at home and is rushed to the emergency room and the worst nightmare for any parents becomes a reality - he is diagnosed with cancer. The film is based on a true story.",
-      "release_date": "2005-05-27"
-    },
-    {
-      "vote_count": 129,
-      "id": 341077,
-      "video": false,
-      "vote_average": 5.4,
-      "title": "Tiger House",
-      "popularity": 5.088,
-      "poster_path": "/odP83vvEMsc7cKxGwsXBhA628G6.jpg",
-      "original_language": "en",
-      "original_title": "Tiger House",
-      "genre_ids": [
-        28,
-        80,
-        18,
-        53
-      ],
-      "backdrop_path": "/cQHtpMJ759YxYgPJzFZmnbfts5m.jpg",
-      "adult": false,
-      "overview": "A young gymnast battles a group of bank robbers at the home of her boyfriend.",
-      "release_date": "2015-08-24"
-    },
-    {
       "vote_count": 6148,
       "id": 353486,
       "video": false,
@@ -61,8 +22,11 @@
       "release_date": "2017-12-09"
     }
   ],
-   "user": [{"emailId": "shyam123@gmail.com",
-   	"password": "pass@123",
-   	"id": 1
-  }]
+  "user": [
+    {
+      "emailId": "shyam123@gmail.com",
+      "password": "pass@123",
+      "id": 1
+    }
+  ]
 }

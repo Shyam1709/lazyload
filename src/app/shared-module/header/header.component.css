@@ -1,7 +1,3 @@
-/*css for hovering on links*/
-a:hover{
-  color:red;
-}
 
 /*css for nav items*/
 .nav-font{
@@ -11,7 +7,7 @@ a:hover{
 }
 
 /*css for navbar logo*/
-.navbar-brand{
+ .navbar-brand{
   color:green;
   font-size: 2rem;
   font-family: 'Timmana', sans-serif;

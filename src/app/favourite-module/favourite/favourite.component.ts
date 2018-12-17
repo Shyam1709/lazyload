@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
  // import { MovieListComponent } from '../../movie-module/movies/movie-list/movie-list.component';
 import { JsonApiService } from './../../services/json-api.service';
 
-
 @Component({
   selector: 'app-favourite',
   templateUrl: './favourite.component.html',

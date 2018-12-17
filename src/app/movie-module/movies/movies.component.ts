@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { JsonApiService } from './../../services/json-api.service';
 
+
 @Component({
   selector: 'app-movies',
   templateUrl: './movies.component.html',

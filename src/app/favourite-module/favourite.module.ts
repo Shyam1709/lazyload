@@ -9,7 +9,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { FavouriteComponent } from './favourite/favourite.component';
 
 const routes: Routes = [
-    { path: 'movies', component: FavouriteComponent }
+    { path: 'movielist', component: FavouriteComponent }
 ];
 
 @NgModule({
@@ -21,7 +21,8 @@ const routes: Routes = [
     SharedModule,
     ReactiveFormsModule,
     RouterModule.forChild(routes)
-  ]
+  ],
+  exports: [FavouriteComponent]
 })
 
 export class FavouriteModule { }
